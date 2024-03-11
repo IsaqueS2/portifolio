@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&family=Tilt+Neon&display=swap");
+
+
+/* Estilo para o preloader */
+
+.preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(255, 255, 255);
+	/* Cor de fundo para o preloader */
+	z-index: 9999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.spinner-img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100px;
+	/* ajuste o tamanho conforme necessário */
+	height: auto;
+}
+
+.loading-text {
+	position: absolute;
+	top: calc(50% + 50px);
+	/* Ajuste conforme necessário */
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 18px;
+	color: #000000;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+/* Gradient Animation Button
+/******************************/
+.mt-3 {
+	border: 0;
+	position: relative;
+	border-radius: 12px;
+	color: #fff;
+	padding: 0 16px;
+	box-shadow: 0 0 0 1px 0 0 0 1px rgba(255, 255, 255, 0.14);
+	max-width: 100%;
+	justify-content: center;
+	align-items: center;
+	transition-property: border-color, background, color, transform, box-shadow;
+	transition-duration: .15s;
+	transition-timing-function: ease;
+	font-size: 16px;
+	line-height: 50px;
+	height: 50px;
+	width: 100%;
+	max-width: 250px;
+	transition: 0.25s;
+}
+
+.highlight-bg-contato {
+	position: absolute;
+	top: 1px;
+	right: 1px;
+	bottom: 1px;
+	left: 1px;
+	background: inherit;
+	border-radius: 12px;
+	background: linear-gradient(-90deg, #5333ed, #00dfd8, #2cd4d9, #5333ed);
+	background-size: 400% 100%;
+	border: none;
+	padding: 0;
+	margin: 0;
+	animation: background-anim 8s ease-in-out infinite;
+}
+
+.button-text-contato {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-radius: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.highlight-bg:after {
+	content: "";
+	position: absolute;
+	background-size: inherit;
+	background-image: inherit;
+	animation: inherit;
+	left: 0;
+	right: 0;
+	top: 2px;
+	height: 100%;
+	filter: blur(.5rem);
+	transition: 0.25s;
+}
+
+/*BOTAO 2*/
+
+.mt-32 {
+	border: 0;
+	position: relative;
+	border-radius: 12px;
+	color: #fff;
+	padding: 0 16px;
+	box-shadow: 0 0 0 1px 0 0 0 1px rgba(255, 255, 255, 0.14);
+	max-width: 100%;
+	justify-content: center;
+	align-items: center;
+	transition-property: border-color, background, color, transform, box-shadow;
+	transition-duration: .15s;
+	transition-timing-function: ease;
+	font-size: 16px;
+	line-height: 50px;
+	height: 50px;
+	width: 100%;
+	max-width: 250px;
+	transition: 0.25s;
+	margin-left: 25%;
+}
+
+.highlight-bg-contato2 {
+	position: absolute;
+	top: 1px;
+	right: 1px;
+	bottom: 1px;
+	left: 1px;
+	background: inherit;
+	border-radius: 12px;
+	background: linear-gradient(-90deg, #5333ed, #00dfd8, #2cd4d9, #5333ed);
+	background-size: 400% 100%;
+	border: none;
+	padding: 0;
+	margin: 0;
+	animation: background-anim 8s ease-in-out infinite;
+	
+}
+
+.button-text-contato2 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-radius: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.highlight-bg2:after {
+	content: "";
+	position: absolute;
+	background-size: inherit;
+	background-image: inherit;
+	animation: inherit;
+	left: 0;
+	right: 0;
+	top: 2px;
+	height: 100%;
+	filter: blur(.5rem);
+	transition: 0.25s;
+}
+
+
+@keyframes background-anim {
+	50% {
+		background-position: 140% 50%;
+		transform: skew(-2deg);
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	.mt-32 {
+		margin-left: 17%;
+	}
+
+}
